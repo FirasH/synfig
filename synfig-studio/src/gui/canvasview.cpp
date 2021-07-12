@@ -1434,12 +1434,6 @@ CanvasView::on_set_end_time_widget_changed()
 	RendDesc rend_desc = get_canvas()->rend_desc();
 	rend_desc.set_time_end(framedial->get_end_time());
 	canvas_interface()->set_rend_desc(rend_desc);
-
-	//refresh the renddesc
-	refresh_rend_desc();
-	refresh_time_window();
-	//refresh canvas_properties
-	canvas_properties.refresh();
 }
 
 void
